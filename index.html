@@ -35,7 +35,7 @@
 		<div class="heroInner">
 			<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="http://klimatik-servis.ru/index.php" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form text-center p-s shadow-m">
 				<input type="hidden" name="formid" value="form2">
-				<h4 class="font-boblic white-text font-s uppercase">
+				<h4 class="formTitle font-boblic white-text font-s uppercase">
 					Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
 				</h4>
 				<div class="form-group">
@@ -90,29 +90,29 @@
 	<section class="cta1">
 		<div class="cta1Inner">
 			<div>
-				<img src="img/conditioner.jpg" alt="Фото кондиционера">
-				<p>
+				<img class="cta1Image" src="img/conditioner.jpg" alt="Фото кондиционера">
+				<p class="text-center">
 					<a href="#0" class="btn btn-accent">Заказать ремонт</a>
 				</p>
 			</div>
-			<div>
-				<ul>
-					<li>
+			<div class="cta1ListWrapper">
+				<ul class="cta1List">
+					<li class="cta1ListItem">
 						Загрязнение фильтров кондиционера;
 					</li>
-					<li>
+					<li class="cta1ListItem">
 						Неисправность дренажной системы;
 					</li>
-					<li>
+					<li class="cta1ListItem">
 						Загрязнение радиатора конденсатора;
 					</li>
-					<li>
+					<li class="cta1ListItem">
 						Неисправность терморезисторов;
 					</li>
-					<li>
+					<li class="cta1ListItem">
 						Короткое замыкание компрессора;
 					</li>
-					<li>
+					<li class="cta1ListItem">
 						Неполадки пульта управления.
 					</li> 
 				</ul>
@@ -252,13 +252,13 @@
 	<section class="cta2">
 		<div class="cta2Inner">
 			<div class="offer">
-				<div class="offerCircle1">
+				<div class="offerCircle offerCircle1">
 					<h3 class="offerCircle1Title">Акция</h3>
 					<p class="offerCircle1Copy">
 						только сегодня к каждой заявке
 					</p>
 				</div>
-				<div class="offerCircle2">
+				<div class="offerCircle offerCircle2">
 					<p class="offerCircle2Subtitle">20%</p>
 					<p class="offerCircle2Copy">
 						скидка <br>на все услуги + подарок
@@ -292,48 +292,51 @@
 		</div>
 	</section>
 	<section class="advantages">
-		<div class="cardAdvantages">
-			<img src="img/advMoney.gif" alt="">
-			<p class="advantagesCopy">
-				Цены ниже рыночных по сравнению с другими компаниями на 30%, за счёт собственного склада запчастей
-			</p>
+		<div class="advantagesInner">
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advMoney.gif" alt="">
+				<p class="advantagesCopy">
+					Цены ниже рыночных по сравнению с другими компаниями на 30%, за счёт собственного склада запчастей
+				</p>
+			</div>
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advClock.gif" alt="">
+				<p class="advantagesCopy">
+					Мы даем гарантию, что специалисты прибудут на объект в оговоренное время или же проведут работы со скидкой
+				</p>
+			</div>
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advCog.gif" alt="">
+				<p class="advantagesCopy">
+					Мы устанавливаем запчасти только высокой надежности и длительным сроком службы. Что позволяет давать гарантию до 3-х лет
+				</p>
+			</div>
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advPerson.gif" alt="">
+				<p class="advantagesCopy">
+					Квалифицированные специалисты с опытом более 5 лет, прошедшие полную аттестацию
+				</p>
+			</div>
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advTalk.gif" alt="">
+				<p class="advantagesCopy">
+					Наши мастера и менеджеры бесплатно проконсультируют и дадут рекомендации по использованию бытовой техники
+				</p>
+			</div>
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advPercent.gif" alt="">
+				<p class="advantagesCopy">
+					Скидки для пенсионеров и инвалидов. скидка при повторном обращении, приятные бонусы постоянным клиентам
+				</p>
+			</div>
+			<div class="cardAdvantages">
+				<img class="hide-on-large" src="img/advTools.gif" alt="">
+				<p class="advantagesCopy">
+					У наших мастеров профессиональные инструменты это напрямую влияет на скорость работ, качество и долговечность работы оборудования
+				</p>
+			</div>
 		</div>
-		<div class="cardAdvantages">
-			<img src="img/advClock.gif" alt="">
-			<p class="advantagesCopy">
-				Мы даем гарантию, что специалисты прибудут на объект в оговоренное время или же проведут работы со скидкой
-			</p>
-		</div>
-		<div class="cardAdvantages">
-			<img src="img/advCog.gif" alt="">
-			<p class="advantagesCopy">
-				Мы устанавливаем запчасти только высокой надежности и длительным сроком службы. Что позволяет давать гарантию до 3-х лет
-			</p>
-		</div>
-		<div class="cardAdvantages">
-			<img src="img/advPerson.gif" alt="">
-			<p class="advantagesCopy">
-				Квалифицированные специалисты с опытом более 5 лет, прошедшие полную аттестацию
-			</p>
-		</div>
-		<div class="cardAdvantages">
-			<img src="img/advTalk.gif" alt="">
-			<p class="advantagesCopy">
-				Наши мастера и менеджеры бесплатно проконсультируют и дадут рекомендации по использованию бытовой техники
-			</p>
-		</div>
-		<div class="cardAdvantages">
-			<img src="img/advPercent.gif" alt="">
-			<p class="advantagesCopy">
-				Скидки для пенсионеров и инвалидов. скидка при повторном обращении, приятные бонусы постоянным клиентам
-			</p>
-		</div>
-		<div class="cardAdvantages">
-			<img src="img/advTools.gif" alt="">
-			<p class="advantagesCopy">
-				У наших мастеров профессиональные инструменты это напрямую влияет на скорость работ, качество и долговечность работы оборудования
-			</p>
-		</div>
+		<!-- end of .advantagesInner -->
 	</section>
 	<section class="services">
 		<h2 class="h2">Ремонтируем и устанавливаем</h2>
@@ -341,37 +344,37 @@
 			<div class="row">
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service1.png" alt="">
-					<h3>Стиральные машины</h3>
+					<h3 class="cardServicesTitle">Стиральные машины</h3>
 				</div>
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service2.png" alt="">
-					<h3>Сушильные машины</h3>
+					<h3 class="cardServicesTitle">Сушильные машины</h3>
 				</div>
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service3.png" alt="">
-					<h3>Посудомоечные машины</h3>
+					<h3 class="cardServicesTitle">Посудомоечные машины</h3>
 				</div>
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service4.png" alt="">
-					<h3>Холодильники</h3>
+					<h3 class="cardServicesTitle">Холодильники</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="cardServices">
-					<img class="cardServicesImage" src="img/service5.png" alt="">
-					<h3>Кондиционеры</h3>
-				</div>
-				<div class="cardServices">
-					<img class="cardServicesImage" src="img/service6.png" alt="">
-					<h3>Газовые и электроплиты</h3>
+					<img class="cardServicesImage" src="img/service8.png" alt="">
+					<h3 class="cardServicesTitle">Кондиционеры</h3>
 				</div>
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service7.png" alt="">
-					<h3>Варочные панели</h3>
+					<h3 class="cardServicesTitle">Газовые и электроплиты</h3>
 				</div>
 				<div class="cardServices">
-					<img class="cardServicesImage" src="img/service8.png" alt="">
-					<h3>Духовые шкафы</h3>
+					<img class="cardServicesImage" src="img/service6.png" alt="">
+					<h3 class="cardServicesTitle">Варочные панели</h3>
+				</div>
+				<div class="cardServices">
+					<img class="cardServicesImage" src="img/service5.png" alt="">
+					<h3 class="cardServicesTitle">Духовые шкафы</h3>
 				</div>
 			</div>
 		</div>
@@ -379,7 +382,7 @@
 	<section class="testimonials">
 		<h2 class="h2 text-center">Отзывы наших клиентов</h2>
 		<div class="testimonialsInner">
-			<div class="row">
+			<div class="row space-around mb-3">
 				<div class="cardTestimonials">
 					<div class="cardTestimonialsHeader">
 						<h3 class="cardTestimonialsTitle">Марина</h3>
@@ -399,7 +402,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row space-around mb-3">
 				<div class="cardTestimonials">
 					<div class="cardTestimonialsHeader">
 						<h3 class="cardTestimonialsTitle">Алла</h3>
@@ -421,7 +424,37 @@
 			</div>
 		</div>
 	</section>
-	<section class="cta3"></section>
-	<footer class="pageFooter"></footer>
+	<section class="cta3">
+		<div class="cta3Inner">
+			<div class="cta3Col">
+				<h2 class="h2">Остались вопросы?<br>Звоните!</h2>
+			</div>
+			<div class="cta3Col">
+				<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="http://klimatik-servis.ru/index.php" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form text-center p-s shadow-m">
+					<input type="hidden" name="formid" value="form2">
+					<h4 class="font-boblic white-text font-s uppercase">
+						Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
+					</h4>
+					<div class="form-group">
+						<input type="text" class="form-control" id="Editbox3" name="Name:" value="" placeholder="Ваше Имя?">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="Editbox4" name="Telephone:" value="" placeholder="Ваш Телефон?">
+					</div>
+					<button type="submit" id="Button2" name="Knopka" class="btn">Оставить заявку</button>
+					<p>
+						<small class="white-text uppercase font-xxs font-boblic">
+							Ваши данные не будут переданы третим лицам
+						</small>
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="pageFooter">
+		<h2 class="h2">
+			Наши услуги по ремоту доступны всем
+		</h2>
+	</footer>
 </body>
 </html>
