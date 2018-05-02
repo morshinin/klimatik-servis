@@ -1,0 +1,305 @@
+@font-face
+{
+   font-family: 'Boblic';
+   src: url('font/boblic.ttf') format('truetype'), 
+   	url('boblic.woff') format('woff');
+}
+
+/* 1. General styles */
+/* 2. Grid */
+/* 3. Spacing helpers */
+/* 4. Align */
+/* 5. Typography helpers */
+/* 6. Font sizes */
+/* 7. Colors */
+/* 8. Shadows */
+/* 9. Buttons */
+/* 10. Forms */
+/* 11. Sections */
+
+
+/* =General styles */
+body {
+	font-family: Boblic, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/* =Grid */
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+.flex {
+	display: flex;
+}
+.row {
+	display: flex;
+}
+/* =Spacing helpers */
+.m-0 {
+	margin: 0;
+}
+.p-s {
+	padding: 1rem;
+}
+/* =Align */
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+/* =Typography */
+h2,
+.h2 {
+	font-size: 48px;
+	font-family: Boblic, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+/* =Typography helpers */
+.uppercase {
+	text-transform: uppercase;
+}
+.bold {
+	font-weight: bold;
+}
+/* =Font sizes */
+.font-xxs {
+	font-size: 13px;
+}
+.font-s {
+	font-size: 19px;
+}
+.font-m {
+	font-size: 29px;
+}
+.font-l {
+	font-size:35px;
+}
+.font-xl {
+	font-size: 48px;
+}
+.font-boblic {
+	font-family:Boblic, Arial;
+}
+/* =Colors */
+.red-text {
+	color:#FF0000;
+}
+.white-text {
+	color:#FFFFFF;
+}
+.blue-text {
+	color: #1E90FF;
+}
+.blue {
+	background-color:#1E90FF;
+}
+/* =Shadows */
+.shadow-m {
+	box-shadow: 0px 0px 10px #696969;
+}
+.shadow-l {
+	box-shadow: 0 5px 10px rgba(0,0,0,.4);
+}
+/* =Buttons */
+.btn {
+	text-transform: capitalize;
+	border: 0px #A9A9A9 solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff800;
+  background: -moz-linear-gradient(top, #fff800 0%, #ffaa00 100%);
+  background: -webkit-linear-gradient(top, #fff800 0%,#ffaa00 100%);
+  background: linear-gradient(to bottom, #fff800 0%,#ffaa00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff800', endColorstr='#ffaa00',GradientType=0 );
+  color: #000000;
+  font-family: Boblic, Impact, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+}
+/* =Forms */
+.form {
+	max-width: 305px;
+	border-radius: 5px;
+	background: #91ddeb;
+	background: -moz-linear-gradient(top, #91ddeb 0%, #20a0b7 100%);
+	background: -webkit-linear-gradient(top, #91ddeb 0%,#20a0b7 100%);
+	background: linear-gradient(to bottom, #91ddeb 0%,#20a0b7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91ddeb', endColorstr='#20a0b7',GradientType=0 );
+}
+.form-control {
+	border: 1px #1E90FF solid;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Boblic;
+	font-size: 20px;
+	padding: 0px 0px 0px 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+/* =Sections */
+/* Header */
+.pageHeader {
+	background-color: rgba(255,255,255,.8);
+	padding-bottom: 20px;
+}
+.pageHeaderUTP {
+	flex: 3
+}
+.pageHeaderContact {
+	flex: 1
+}
+/* Hero */
+.hero {
+	background: url('img/heroImg.jpg') center no-repeat;
+	min-height: 70vh;
+}
+.heroInner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	height: 100%;
+}
+/* Benefits */
+.benefitsInner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/* Cta1 */
+.cta1Inner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/* Guarantee */
+.guaranteeInner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/* How we work */
+.howWeWorkInner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 50px;
+}
+/* Cta2 */
+.cta2 {
+	background: url('img/blurredbg.jpg') center no-repeat;
+}
+.cta2Inner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+}
+.offer,
+.cta2FormWrapper {
+	flex: 1;
+}
+/* Advantages */
+.advantages {
+	background: url('img/advantages.jpg') center no-repeat;
+}
+/* Testimonials */
+.testimonialsInner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+/* =Components */
+/* Benefits card */
+.cardBenefits {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	text-align: center;
+	font-family: Boblic, Arial, sans-serif;
+	color: #696969;
+	font-weight: bold;
+}
+.cardBenefitsHeader {
+	background: url('img/benefitsBadge.png') center no-repeat;
+	min-height: 136px;
+	color: #ffffff;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: bold;
+}
+.cardBenefitsBody {
+	font-size: 19px;
+}
+/* Card Guarantee */
+.cardGuarantee {
+	padding: 10px;
+	text-align: center;
+	flex: 1;
+}
+.cardGuarantee:not(:last-of-type) {
+	background-image: linear-gradient(to bottom, #fff 20%, transparent 20%), linear-gradient(to left, #DCDCDC 3px, transparent 1px);
+}
+.cardGuaranteeTitle {
+	color:#696969;
+	font-size: 24px;
+	font-family: Boblic, Arial, sans-serif;
+	text-transform: uppercase;
+}
+.cardGuaranteeCopy {
+	font-size: 17px;
+	color:#696969;
+	font-family: Boblic, Arial, sans-serif;
+}
+/* Card how we work */
+.cardHowWeWork {
+	color:#696969;
+	font-family: Boblic, Arial, sans-serif;
+	flex: 1;
+	text-align: center;
+}
+.cardHowWeWorkTitle {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.cardHowWeWorkCopy {
+	font-size: 16px;
+}
+/* Card Services */
+.cardServices {
+	flex: 1;
+	font-size: 19px;
+	font-family: Boblic, Arial, sans-serif;
+	color: #696969;
+	text-align: center;
+}
+/* Card Testimonials */
+.cardTestimonials {
+	flex: 1;
+	color:#696969;
+}
+.cardTestimonialsHeader {
+	display: flex;
+}
+.cardTestimonialsTitle {
+	display: flex;
+  align-items: flex-end;
+  margin: 0;
+}
+.cardTestimonialsAvatar {
+	margin-left: auto;
+}
