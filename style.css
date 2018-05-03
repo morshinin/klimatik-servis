@@ -42,8 +42,18 @@ body {
 .mb-3 {
 	margin-bottom: 36px;
 }
+.mt-2 {
+	margin-top: 20px;
+}
 .p-s {
 	padding: 1rem;
+}
+.px-s {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.py-m {
+	padding: 20px 0;
 }
 .space-around {
 	justify-content: space-around;
@@ -91,6 +101,10 @@ h2,
 }
 .font-xl {
 	font-size: 48px;
+}
+/* Font families */
+.font-arial {
+	font-family: Arial, sans-serif;
 }
 .font-boblic {
 	font-family:Boblic, Arial;
@@ -153,9 +167,12 @@ h2,
 	background: linear-gradient(to bottom, #20a0b7 0%,#91ddeb 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91ddeb', endColorstr='#20a0b7',GradientType=0 );
 }
+.btn-form {
+	padding: 10px 40px;
+}
 /* =Forms */
 .form {
-	padding: 27px 10px;
+	padding: 27px 10px 0;
 	box-sizing: border-box;
 	max-width: 305px;
 	border-radius: 5px;
@@ -168,6 +185,12 @@ h2,
 .formTitle {
 	margin: 0 0 27px 0;
 }
+.form-group {
+	margin: 0 0 5px;
+}
+.form-group:nth-of-type(2) {
+	margin-bottom: 20px;
+}
 .form-control {
 	border: 1px #1E90FF solid;
 	background-color: #FFFFFF;
@@ -177,12 +200,16 @@ h2,
 	padding: 0px 0px 0px 10px;
 	text-align: left;
 	vertical-align: middle;
+	width: 231px;
+	line-height: 34px;
 }
 /* =Sections */
-/* Header */
+/* =Header */
 .pageHeader {
 	background-color: rgba(255,255,255,.8);
-	padding-bottom: 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 .pageHeaderUTP {
 	flex: 3
@@ -194,7 +221,7 @@ h2,
 .hero {
 	background: url('img/heroImg.jpg') center no-repeat;
 	margin-bottom: 50px;
-	padding: 165px 0;
+	padding: 315px 0 165px;
 }
 .heroInner {
 	max-width: 1000px;
