@@ -35,12 +35,19 @@ body {
 .row {
 	display: flex;
 }
+/* =Helpers */
+.inline-block {
+	display: inline-block;
+}
 /* =Spacing helpers */
 .m-0 {
 	margin: 0;
 }
 .mb-3 {
 	margin-bottom: 36px;
+}
+.mb-5 {
+	margin-bottom: 50px;
 }
 .mt-2 {
 	margin-top: 20px;
@@ -173,6 +180,7 @@ h2,
 /* =Forms */
 .form {
 	padding: 27px 10px 0;
+	position: relative;
 	box-sizing: border-box;
 	max-width: 305px;
 	border-radius: 5px;
@@ -182,8 +190,27 @@ h2,
 	background: linear-gradient(to bottom, #91ddeb 0%,#20a0b7 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91ddeb', endColorstr='#20a0b7',GradientType=0 );
 }
+.form-main:after {
+	content: url('img/arrowCurl.png');
+	position: absolute;
+	bottom: 0;
+	left: -50px;
+}
+.form-vintage {
+	padding: 1em;
+	background: #fff;
+	border: 16px solid transparent;
+	border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+	              #58a 0, #58a 3em, transparent 0, transparent 4em);
+	
+	max-width: 20em;
+	font: 100%/1.6 Baskerville, Palatino, serif;
+}
 .formTitle {
 	margin: 0 0 27px 0;
+}
+.formTitle-vintage {
+	color: #ff0000;
 }
 .form-group {
 	margin: 0 0 5px;
@@ -263,7 +290,7 @@ h2,
 }
 .cta1List {
 	background: #FFFF33;
-	padding: 20px;
+	padding: 20px 20px 20px 7px;
 }
 .cta1List:before {
 	content: '';
@@ -279,7 +306,7 @@ h2,
 }
 .cta1List,
 .cta1ListItem {
-	list-style-type: '-';
+	list-style-type: none;
 }
 /* Guarantee */
 .guaranteeInner {
@@ -305,6 +332,13 @@ h2,
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
+	position: relative;
+}
+.cta2FormWrapper {
+	display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 50px;
 }
 .offer,
 .cta2FormWrapper {
@@ -313,19 +347,21 @@ h2,
 .offerCircle {
 	border-radius: 50%;
 	background: rgba(255,255,255,.9);
-	position: relative;
+	position: absolute;
 	border: 1px solid grey;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
+	z-index: 10;
 }
 .offerCircle:before {
 	content: '';
 	position: absolute;
 	background: rgba(255,255,255,.2);
+	z-index: 1;
 }
 .offerCircle1 {
 	width: 250px;
@@ -339,6 +375,9 @@ h2,
 .offerCircle2 {
 	width: 180px;
 	height: 180px;
+	left: 220px;
+  top: 100px;
+  z-index: 1;
 }
 .offerCircle1:before {
 	width: 190px;
@@ -349,21 +388,37 @@ h2,
 	color:#00BFFF;
 	font-size: 53px;
 	text-transform: uppercase;
+	margin: 0 0 10px;
 }
 .offerCircle1Copy {
 	font-weight: bold;
 	color:#696969;
 	font-size: 32px;
+	margin: 0;
 }
 .offerCircle2Subtitle {
 	color:#FFA500;
 	font-size: 53px;
 	text-transform: uppercase;
+	margin: 0 0 10px;
 }
 .offerCircle2Copy {
 	font-weight: bold;
 	color:#696969;
 	font-size: 17px;
+	margin: 0;
+	padding: 0 10px;
+}
+.offerMessage {
+	margin-top: 340px;
+  font-size: 27px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 20px;
+  background: rgba(255,255,255,.7);
+  max-width: 480px;
+  text-align: center;
+  border-radius: 5px;
 }
 /* =Advantages */
 .advantagesInner {
