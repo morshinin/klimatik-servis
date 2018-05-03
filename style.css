@@ -39,6 +39,9 @@ body {
 .inline-block {
 	display: inline-block;
 }
+.img-responsive {
+	max-width: 100%;
+}
 /* =Spacing helpers */
 .m-0 {
 	margin: 0;
@@ -234,22 +237,57 @@ h2,
 /* =Sections */
 /* =Header */
 .pageHeader {
-	background-color: rgba(255,255,255,.8);
-	position: absolute;
-	top: 0;
-	width: 100%;
+	padding: 20px 10px;
 }
 .pageHeaderUTP {
-	flex: 3
+	margin-bottom: 10px;
+}
+.pageHeaderUTPCopy {
+	text-transform: uppercase;
+	font-size:35px;
+	font-weight: bold;
+	margin: 0;
+}
+.pageHeaderUTPCopy-text-red {
+	color:#FF0000;
+}
+.pageHeaderUTPCopy-bg-blue {
+	background-color:#1E90FF;
+	color: #fff;
 }
 .pageHeaderContact {
-	flex: 1
+	font-family: Arial, sans-serif;
+}
+@media (min-width: 1000px) {
+	.pageHeader {
+		background-color: rgba(255,255,255,.8);
+		position: absolute;
+		top: 0;
+		width: 100%;
+		box-shadow: 0 5px 10px rgba(0,0,0,.4);
+	}
+	.pageHeaderInner {
+		max-width: 1000px;
+		margin: auto;
+		display: flex;
+	}
+	.pageHeaderUTP {
+		flex: 3;
+		text-align: left;
+	}
+	.pageHeaderContact {
+		flex: 1;
+		text-align: right;
+	}
 }
 /* Hero */
 .hero {
-	background: url('img/heroImg.jpg') center no-repeat;
+	background-image: url('img/heroImg.jpg');
+	background-repeat: no-repeat;
 	margin-bottom: 50px;
-	padding: 335px 0 165px;
+	padding: 50px 10px;
+	background-position: 0 -100px;
+	background-size: cover;
 }
 .heroInner {
 	max-width: 1000px;
@@ -261,6 +299,13 @@ h2,
 	align-items: flex-end;
 	height: 100%;
 }
+@media (min-width: 1000px) {
+	.hero {
+		background-position: center;
+		margin-bottom: 50px;
+		padding: 335px 0 165px;
+	}
+}
 /* Benefits */
 .benefits {
 	margin-bottom: 150px;
@@ -270,6 +315,36 @@ h2,
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/* Benefits card */
+.cardBenefits {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	text-align: center;
+	color: #696969;
+	font-weight: bold;
+	flex-basis: 180px;
+}
+@media (min-width: 1000px) {
+	.cardBenefits {
+		flex-basis: 0;
+	}
+}
+.cardBenefitsHeader {
+	background: url('img/benefitsBadge.png') center no-repeat;
+	min-height: 136px;
+	color: #ffffff;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: bold;
+}
+.cardBenefitsBody {
+	font-size: 19px;
 }
 /* Cta1 */
 .cta1Inner {
@@ -277,6 +352,10 @@ h2,
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
+}
+.cta1Col1 {
+	text-align: center;
 }
 .cta1Image {
 	margin-bottom: 20px;
@@ -286,60 +365,134 @@ h2,
   font-size: 27px;
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
 }
 .cta1List {
 	background: #FFFF33;
 	padding: 20px 20px 20px 7px;
 }
-.cta1List:before {
-	content: '';
-	position: absolute;
-	top: 27px;
-	left: 20px;
-	width: 0; 
-	height: 0; 
-	border-top: 125px solid transparent;
-	border-bottom: 125px solid transparent; 
-	
-	border-right:125px solid #FFFF33;
-}
 .cta1List,
 .cta1ListItem {
 	list-style-type: none;
+}
+@media (min-width: 1000px) {
+	.cta1Inner {
+		flex-direction: row;
+	}
+	.cta1Col1 {
+		text-align: initial;
+	}
+	.cta1ListWrapper {
+	  justify-content: flex-end;
+	}
+	.cta1List:before {
+		content: '';
+		position: absolute;
+		top: 27px;
+		left: 20px;
+		width: 0; 
+		height: 0; 
+		border-top: 125px solid transparent;
+		border-bottom: 125px solid transparent; 
+		
+		border-right:125px solid #FFFF33;
+	}
 }
 /* Guarantee */
 .guaranteeInner {
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+/* Card Guarantee */
+.cardGuarantee {
+	padding: 10px;
+	text-align: center;
+	/*flex: 1;*/
+	flex-basis: 180px;
+}
+.cardGuaranteeTitle {
+	color:#696969;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.cardGuaranteeCopy {
+	font-size: 17px;
+	color:#696969;
+}
+@media (min-width: 1000px) {
+	.guaranteeInner {
+		justify-content: space-between;
+	}
+	.cardGuarantee:not(:last-of-type) {
+		background-image: linear-gradient(to bottom, #fff 20%, transparent 20%), linear-gradient(to left, #DCDCDC 3px, transparent 1px);
+	}
 }
 /* How we work */
 .howWeWorkInner {
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding: 0 50px;
+}
+/* Card how we work */
+.cardHowWeWork {
+	color:#696969;
+	/*flex: 1;*/
+	
+	flex-basis: 150px;
+	text-align: center;
+	position: relative;
+}
+@media (min-width: 1000px) {
+	.howWeWorkInner {
+		justify-content: space-around;
+	}
+	.cardHowWeWork:not(:last-of-type):after {
+		content: url('img/arrowRight.png');
+		position: absolute;
+		right: -20px;
+		top: 20px;
+	}
+}
+.cardHowWeWorkTitle {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.cardHowWeWorkCopy {
+	font-size: 16px;
 }
 /* Cta2 */
 .cta2 {
-	background: url('img/blurredbg.jpg') center no-repeat;
+	background-image: url('img/blurredbg.jpg');
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding: 50px 0;
 }
 .cta2Inner {
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
+	flex-direction: column;
 	position: relative;
 }
 .cta2FormWrapper {
 	display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
   margin-top: 50px;
+}
+.offer {
+	position: relative;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .offer,
 .cta2FormWrapper {
@@ -348,7 +501,7 @@ h2,
 .offerCircle {
 	border-radius: 50%;
 	background: rgba(255,255,255,.9);
-	position: absolute;
+	position: static;
 	border: 1px solid grey;
 	display: flex;
 	justify-content: center;
@@ -411,7 +564,7 @@ h2,
 	padding: 0 10px;
 }
 .offerMessage {
-	margin-top: 340px;
+	margin-top: 40px;
   font-size: 27px;
   text-transform: uppercase;
   font-weight: bold;
@@ -421,107 +574,53 @@ h2,
   text-align: center;
   border-radius: 5px;
 }
+@media (min-width: 1000px) {
+	.cta2Inner {
+		flex-direction: row;
+	}
+	.cta2FormWrapper {
+	  justify-content: flex-end;
+	  align-items: flex-end;
+	  margin-top: 50px;
+	}
+	.offer {
+		display: block;
+	}
+	.offerCircle {
+		position: absolute;
+	}
+	.offerMessage {
+		margin-top: 340px;
+	}
+}
 /* =Advantages */
 .advantagesInner {
 	max-width: 1000px;
 	margin: auto;
 	min-height: 690px;
 	position: relative;
-}
-@media (min-width: 1000px) {
-	.advantagesInner {
-		background: url('img/advantages.jpg') 100px no-repeat;
-	}
-}
-/* Testimonials */
-.testimonialsInner {
-	max-width: 1000px;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-}
-/* Сta3 */
-.cta3 {
-	background: url('img/cta3Bg.jpg') center / cover no-repeat;
-	padding: 50px 0;
-}
-.cta3Inner {
-	max-width: 1000px;
-	margin: auto;
-	display: flex;
-}
-.cta3Col {
-	flex: 1;
-}
-/* =Components */
-/* Benefits card */
-.cardBenefits {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	text-align: center;
-	color: #696969;
-	font-weight: bold;
-}
-.cardBenefitsHeader {
-	background: url('img/benefitsBadge.png') center no-repeat;
-	min-height: 136px;
-	color: #ffffff;
-	font-size: 35px;
-	display: flex;
-	justify-content: center;
-	-ms-align-items: center;
-	align-items: center;
-	font-weight: bold;
-}
-.cardBenefitsBody {
-	font-size: 19px;
-}
-/* Card Guarantee */
-.cardGuarantee {
 	padding: 10px;
-	text-align: center;
-	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-.cardGuarantee:not(:last-of-type) {
-	background-image: linear-gradient(to bottom, #fff 20%, transparent 20%), linear-gradient(to left, #DCDCDC 3px, transparent 1px);
-}
-.cardGuaranteeTitle {
-	color:#696969;
-	font-size: 24px;
-	text-transform: uppercase;
-}
-.cardGuaranteeCopy {
-	font-size: 17px;
-	color:#696969;
-}
-/* Card how we work */
-.cardHowWeWork {
-	color:#696969;
-	flex: 1;
-	text-align: center;
-	position: relative;
-}
-@media (min-width: 1000px) {
-	.cardHowWeWork:not(:last-of-type):after {
-		content: url('img/arrowRight.png');
-		position: absolute;
-		right: -20px;
-		top: 20px;
-	}
-}
-.cardHowWeWorkTitle {
-	font-size: 20px;
-	text-transform: uppercase;
-}
-.cardHowWeWorkCopy {
-	font-size: 16px;
+.advantagesTitle {
+	background: #009CB1;
+	color: #fff;
+	margin: auto;
+	padding: 10px;
 }
 /* Card Advantages */
+.cardAdvantages {
+	flex-basis: 300px;
+	padding: 10px;
+	text-align: center;
+}
 @media (min-width: 1000px) {
 	.cardAdvantages {
 		position: absolute;
 		max-width: 400px;
+		text-align: left;
 	}
 	.cardAdvantages:first-of-type {
 		left: 446px;
@@ -552,12 +651,25 @@ h2,
 		top: 600px;
 	}
 }
+@media (min-width: 1000px) {
+	.advantagesInner {
+		background: url('img/advantages.jpg') 100px no-repeat;
+	}
+}
+/* Services */
+.servicesRow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 /* Card Services */
 .cardServices {
-	flex: 1;
+	/*flex: 1;*/
+	flex-basis: 200px;
 	font-size: 19px;
 	color: #696969;
 	text-align: center;
+	padding: 10px;
 }
 .cardServicesTitle {
 	text-transform: uppercase;
@@ -568,11 +680,26 @@ h2,
 	border-radius: 50%;
 	box-shadow: 0 0 10px;
 }
+@media (min-width: 1000px) {
+	.servicesRow {
+		justify-content: space-between;
+	}
+}
+/* Testimonials */
+.testimonialsInner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.testimonialsRow {
+	display: flex;
+	flex-wrap: wrap;
+}
 /* Card Testimonials */
 .cardTestimonials {
-	flex: 1;
+	flex-basis: 450px;
 	color:#696969;
-	max-width: 360px;
 }
 .cardTestimonialsHeader {
 	display: flex;
@@ -595,4 +722,23 @@ h2,
 .cardTestimonialsAvatar {
 	margin-left: auto;
 	margin-right: 24px;
+}
+/* Сta3 */
+.cta3 {
+	background: url('img/cta3Bg.jpg') center / cover no-repeat;
+	padding: 50px 10px;
+}
+.cta3Inner {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.cta3Col {
+	flex: 1;
+}
+@media (min-width: 1000px) {
+	.cta3Inner {
+		flex-direction: row;
+	}
 }
