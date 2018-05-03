@@ -197,14 +197,15 @@ h2,
 	left: -50px;
 }
 .form-vintage {
-	padding: 1em;
+	padding: 1em 50px;
 	background: #fff;
 	border: 16px solid transparent;
-	border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
-	              #58a 0, #58a 3em, transparent 0, transparent 4em);
+	border-image: 16 repeating-linear-gradient(-45deg, #FF7F64 0, #FF7F64 1em, transparent 0, transparent 2em,
+	              #A6DBF1 0, #A6DBF1 3em, transparent 0, transparent 4em);
 	
-	max-width: 20em;
+	max-width: initial;
 	font: 100%/1.6 Baskerville, Palatino, serif;
+
 }
 .formTitle {
 	margin: 0 0 27px 0;
@@ -248,7 +249,7 @@ h2,
 .hero {
 	background: url('img/heroImg.jpg') center no-repeat;
 	margin-bottom: 50px;
-	padding: 315px 0 165px;
+	padding: 335px 0 165px;
 }
 .heroInner {
 	max-width: 1000px;
@@ -459,7 +460,6 @@ h2,
 	flex-direction: column;
 	flex: 1;
 	text-align: center;
-	font-family: Boblic, Arial, sans-serif;
 	color: #696969;
 	font-weight: bold;
 }
@@ -489,18 +489,15 @@ h2,
 .cardGuaranteeTitle {
 	color:#696969;
 	font-size: 24px;
-	font-family: Boblic, Arial, sans-serif;
 	text-transform: uppercase;
 }
 .cardGuaranteeCopy {
 	font-size: 17px;
 	color:#696969;
-	font-family: Boblic, Arial, sans-serif;
 }
 /* Card how we work */
 .cardHowWeWork {
 	color:#696969;
-	font-family: Boblic, Arial, sans-serif;
 	flex: 1;
 	text-align: center;
 	position: relative;
@@ -559,7 +556,6 @@ h2,
 .cardServices {
 	flex: 1;
 	font-size: 19px;
-	font-family: Boblic, Arial, sans-serif;
 	color: #696969;
 	text-align: center;
 }
@@ -595,7 +591,6 @@ h2,
 .cardTestimonialsCopy {
 	color:#696969;
 	font-size: 19px;
-	font-family: Boblic, Arial, sans-serif;
 }
 .cardTestimonialsAvatar {
 	margin-left: auto;
