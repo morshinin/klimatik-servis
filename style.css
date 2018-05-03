@@ -2,20 +2,43 @@
 {
    font-family: 'Boblic';
    src: url('font/boblic.ttf') format('truetype'), 
-   	url('boblic.woff') format('woff');
+   	url('font/boblic.woff') format('woff');
 }
 
-/* 1. General styles */
-/* 2. Grid */
-/* 3. Spacing helpers */
-/* 4. Align */
-/* 5. Typography helpers */
-/* 6. Font sizes */
-/* 7. Colors */
-/* 8. Shadows */
-/* 9. Buttons */
-/* 10. Forms */
-/* 11. Sections */
+/* Table of contents */
+
+/* =General styles */
+/* =Grid */
+/* =Helpers */
+/* =Spacing helpers */
+/* =Align */
+/* =Typography */
+/* =Typography helpers */
+/* =Visibility helpers */
+/* =Font sizes */
+/* Font families */
+/* =Colors */
+/* =Shadows */
+/* =Buttons */
+/* =Forms */
+/* =Sections */
+/* =Header */
+/* Hero */
+/* Benefits */
+/* Benefits card */
+/* Cta1 */
+/* Guarantee */
+/* Card Guarantee */
+/* How we work */
+/* Card how we work */
+/* Cta2 */
+/* =Advantages */
+/* Card Advantages */
+/* Services */
+/* Card Services */
+/* Testimonials */
+/* Card Testimonials */
+/* Сta3 */
 
 
 /* =General styles */
@@ -238,6 +261,7 @@ h2,
 /* =Header */
 .pageHeader {
 	padding: 20px 10px;
+	box-sizing: border-box;
 }
 .pageHeaderUTP {
 	margin-bottom: 10px;
