@@ -623,13 +623,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['formid'] == 'form3')
 			<div class="offer">
 				<div class="offerCircle offerCircle1">
 					<h3 class="offerCircle1Title">Акция</h3>
-					<p class="offerCircle1Copy">
+					<p class="offerCircleCopy offerCircle1Copy">
 						только сегодня к каждой заявке
 					</p>
 				</div>
 				<div class="offerCircle offerCircle2">
 					<p class="offerCircle2Subtitle">20%</p>
-					<p class="offerCircle2Copy">
+					<p class="offerCircleCopy offerCircle2Copy">
 						скидка <br>на все услуги + подарок
 					</p>
 				</div>

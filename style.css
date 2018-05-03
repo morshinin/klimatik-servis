@@ -208,13 +208,15 @@ h2,
 	padding: 27px 10px 0;
 	position: relative;
 	box-sizing: border-box;
-	max-width: 305px;
 	border-radius: 5px;
 	background: #91ddeb;
 	background: -moz-linear-gradient(top, #91ddeb 0%, #20a0b7 100%);
 	background: -webkit-linear-gradient(top, #91ddeb 0%,#20a0b7 100%);
 	background: linear-gradient(to bottom, #91ddeb 0%,#20a0b7 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91ddeb', endColorstr='#20a0b7',GradientType=0 );
+}
+.form-main {
+	max-width: 305px;
 }
 .form-main:after {
 	content: url('img/arrowCurl.png');
@@ -229,9 +231,7 @@ h2,
 	border-image: 16 repeating-linear-gradient(-45deg, #FF7F64 0, #FF7F64 1em, transparent 0, transparent 2em,
 	              #A6DBF1 0, #A6DBF1 3em, transparent 0, transparent 4em);
 	
-	max-width: initial;
 	font: 100%/1.6 Baskerville, Palatino, serif;
-
 }
 .formTitle {
 	margin: 0 0 27px 0;
@@ -251,7 +251,7 @@ h2,
 	color: #000000;
 	font-family: Boblic;
 	font-size: 20px;
-	padding: 0px 0px 0px 10px;
+	padding: 5px 0px 5px 10px;
 	text-align: left;
 	vertical-align: middle;
 	width: 231px;
@@ -535,21 +535,21 @@ h2,
 	flex-direction: column;
 	z-index: 10;
 }
-.offerCircle:before {
+/*.offerCircle:before {
 	content: '';
 	position: absolute;
 	background: rgba(255,255,255,.2);
 	z-index: 1;
-}
+}*/
 .offerCircle1 {
 	width: 250px;
 	height: 250px;
 }
-.offerCircle1:before {
+/*.offerCircle1:before {
 	width: 270px;
 	height: 270px;
 	border-radius: 50%;
-}
+}*/
 .offerCircle2 {
 	width: 180px;
 	height: 180px;
@@ -557,22 +557,26 @@ h2,
   top: 100px;
   z-index: 1;
 }
-.offerCircle1:before {
+/*.offerCircle1:before {
 	width: 190px;
 	height: 190px;
 	border-radius: 50%;
-}
+}*/
 .offerCircle1Title {
 	color:#00BFFF;
 	font-size: 53px;
 	text-transform: uppercase;
 	margin: 0 0 10px;
 }
-.offerCircle1Copy {
+.offerCircleCopy {
 	font-weight: bold;
 	color:#696969;
 	font-size: 32px;
 	margin: 0;
+	width: inherit; /* Fix for IE */
+}
+.offerCircle1Copy {
+	font-size: 32px;
 }
 .offerCircle2Subtitle {
 	color:#FFA500;
@@ -581,11 +585,9 @@ h2,
 	margin: 0 0 10px;
 }
 .offerCircle2Copy {
-	font-weight: bold;
-	color:#696969;
 	font-size: 17px;
-	margin: 0;
 	padding: 0 10px;
+	width: 110px;
 }
 .offerMessage {
 	margin-top: 40px;
@@ -724,6 +726,7 @@ h2,
 .cardTestimonials {
 	flex-basis: 450px;
 	color:#696969;
+	padding: 10px;
 }
 .cardTestimonialsHeader {
 	display: flex;

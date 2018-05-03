@@ -5,6 +5,137 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<title>Ремонт | Установка кондиционеров в Москве по доступным ценам</title>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+	function ValidateFormverh(theForm)
+	{
+	   var regexp;
+	   if (theForm.Editbox1.value == "")
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox1.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox1.value.length < 2)
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox1.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox1.value.length > 25)
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox1.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox2.value == "")
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox2.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox2.value.length < 7)
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox2.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox2.value.length > 14)
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox2.focus();
+	      return false;
+	   }
+	   return true;
+	}
+	</script>
+	<script type="text/javascript">
+	function ValidateFormseredina(theForm)
+	{
+	   var regexp;
+	   if (theForm.Editbox3.value == "")
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox3.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox3.value.length < 2)
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox3.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox3.value.length > 25)
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox3.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox4.value == "")
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox4.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox4.value.length < 7)
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox4.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox4.value.length > 14)
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox4.focus();
+	      return false;
+	   }
+	   return true;
+	}
+	</script>
+	<script type="text/javascript">
+	function ValidateFormniz(theForm)
+	{
+	   var regexp;
+	   if (theForm.Editbox5.value == "")
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox5.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox5.value.length < 2)
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox5.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox5.value.length > 25)
+	   {
+	      alert("Введите Ваше Имя!");
+	      theForm.Editbox5.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox6.value == "")
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox6.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox6.value.length < 7)
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox6.focus();
+	      return false;
+	   }
+	   if (theForm.Editbox6.value.length > 14)
+	   {
+	      alert("Введите Ваш телефон!");
+	      theForm.Editbox6.focus();
+	      return false;
+	   }
+	   return true;
+	}
+	</script>
 </head>
 <body>
 	<header class="pageHeader">
@@ -30,18 +161,18 @@
 	</header>
 	<section class="hero">
 		<div class="heroInner">
-			<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="http://klimatik-servis.ru/index.php" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form form-main text-center p-s shadow-m">
-				<input type="hidden" name="formid" value="form2">
+			<form name="Formverh" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="<?php echo basename(__FILE__); ?>" id="Form1" onsubmit="return ValidateFormverh(this)" class="form form-main text-center p-s shadow-m">
+				<input type="hidden" name="formid" value="form1">
 				<h4 class="formTitle font-boblic white-text font-s uppercase">
 					Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
 				</h4>
 				<div class="form-group">
-					<input type="text" class="form-control" id="Editbox3" name="Name:" value="" placeholder="Ваше Имя?">
+					<input type="text" class="form-control" id="Editbox1" name="Name:" value="" placeholder="Ваше Имя?">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="Editbox4" name="Telephone:" value="" placeholder="Ваш Телефон?">
+					<input type="text" class="form-control" id="Editbox2" name="Telephone:" value="" placeholder="Ваш Телефон?">
 				</div>
-				<button type="submit" id="Button2" name="Knopka" class="btn btn-form">Оставить заявку</button>
+				<button type="submit" id="Button1" name="Knopka" class="btn btn-form">Оставить заявку</button>
 				<p class="px-s mt-2">
 					<small class="white-text uppercase font-xxs font-boblic">
 						Ваши данные не будут переданы третим лицам
@@ -251,13 +382,13 @@
 			<div class="offer">
 				<div class="offerCircle offerCircle1">
 					<h3 class="offerCircle1Title">Акция</h3>
-					<p class="offerCircle1Copy">
+					<p class="offerCircleCopy offerCircle1Copy">
 						только сегодня к каждой заявке
 					</p>
 				</div>
 				<div class="offerCircle offerCircle2">
 					<p class="offerCircle2Subtitle">20%</p>
-					<p class="offerCircle2Copy">
+					<p class="offerCircleCopy offerCircle2Copy">
 						скидка <br>на все услуги + подарок
 					</p>
 				</div>
@@ -266,7 +397,7 @@
 				</div>
 			</div>
 			<div class="cta2FormWrapper">
-				<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="http://klimatik-servis.ru/index.php" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form form-main text-center p-s shadow-m mb-5">
+				<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="<?php echo basename(__FILE__); ?>" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form form-main text-center p-s shadow-m mb-5">
 					<input type="hidden" name="formid" value="form2">
 					<h4 class="formTitle font-boblic white-text font-s uppercase">
 						Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
@@ -428,18 +559,18 @@
 				<h2 class="h2">Остались вопросы?<br>Звоните!</h2>
 			</div>
 			<div class="cta3Col">
-				<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="http://klimatik-servis.ru/index.php" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form form-vintage text-center p-s shadow-m">
-					<input type="hidden" name="formid" value="form2">
+				<form name="Formniz" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="<?php echo basename(__FILE__); ?>" id="Form3" onsubmit="return ValidateFormniz(this)" class="form form-vintage text-center p-s shadow-m">
+					<input type="hidden" name="formid" value="form3">
 					<h4 class="formTitle formTitle-vintage font-boblic white-text font-s uppercase">
 						Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
 					</h4>
 					<div class="form-group">
-						<input type="text" class="form-control" id="Editbox3" name="Name:" value="" placeholder="Ваше Имя?">
+						<input type="text" class="form-control" id="Editbox5" name="Name:" value="" placeholder="Ваше Имя?">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" id="Editbox4" name="Telephone:" value="" placeholder="Ваш Телефон?">
+						<input type="text" class="form-control" id="Editbox6" name="Telephone:" value="" placeholder="Ваш Телефон?">
 					</div>
-					<button type="submit" id="Button2" name="Knopka" class="btn btn-form">Оставить заявку</button>
+					<button type="submit" id="Button3" name="Knopka" class="btn btn-form">Оставить заявку</button>
 					<p class="px-s mt-2">
 						<small class="red-text uppercase font-xxs font-boblic">
 							Ваши данные не будут переданы третим лицам
