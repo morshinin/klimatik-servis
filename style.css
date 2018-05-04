@@ -256,6 +256,7 @@ h2,
 	vertical-align: middle;
 	width: 231px;
 	line-height: 34px;
+	max-width: 100%;
 }
 /* =Sections */
 /* =Header */

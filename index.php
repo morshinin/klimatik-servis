@@ -218,7 +218,7 @@
 	<section class="cta1">
 		<div class="cta1Inner">
 			<div class="cta1Col1">
-				<img class="cta1Image" src="img/conditioner.jpg" alt="Фото кондиционера" class="img-responsive">
+				<img class="cta1Image img-responsive" src="img/conditioner.jpg" alt="Фото кондиционера" class="img-responsive">
 				<p class="text-center">
 					<a href="#0" class="btn btn-accent">Заказать ремонт</a>
 				</p>
