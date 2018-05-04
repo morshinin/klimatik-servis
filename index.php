@@ -472,26 +472,30 @@
 		<div class="container">
 			<div class="servicesRow">
 				<div class="cardServices">
+					<img class="cardServicesImage" src="img/service8.png" alt="">
+					<h3 class="cardServicesTitle">Кондиционеры</h3>
+				</div>
+				<div class="cardServices">
+					<img class="cardServicesImage" src="img/service8.png" alt="">
+					<h3 class="cardServicesTitle">Сплит-системы</h3>
+				</div>
+				<div class="cardServices">
+					<img class="cardServicesImage" src="img/service4.png" alt="">
+					<h3 class="cardServicesTitle">Холодильники</h3>
+				</div>
+				<div class="cardServices">
+					<img class="cardServicesImage" src="img/service4.png" alt="">
+					<h3 class="cardServicesTitle">Морозильники</h3>
+				</div>
+			</div>
+<!-- 			<div class="servicesRow">
+				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service1.png" alt="">
 					<h3 class="cardServicesTitle">Стиральные машины</h3>
 				</div>
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service2.png" alt="">
 					<h3 class="cardServicesTitle">Сушильные машины</h3>
-				</div>
-				<div class="cardServices">
-					<img class="cardServicesImage" src="img/service3.png" alt="">
-					<h3 class="cardServicesTitle">Посудомоечные машины</h3>
-				</div>
-				<div class="cardServices">
-					<img class="cardServicesImage" src="img/service4.png" alt="">
-					<h3 class="cardServicesTitle">Холодильники</h3>
-				</div>
-			</div>
-			<div class="servicesRow">
-				<div class="cardServices">
-					<img class="cardServicesImage" src="img/service8.png" alt="">
-					<h3 class="cardServicesTitle">Кондиционеры</h3>
 				</div>
 				<div class="cardServices">
 					<img class="cardServicesImage" src="img/service7.png" alt="">
@@ -505,7 +509,7 @@
 					<img class="cardServicesImage" src="img/service5.png" alt="">
 					<h3 class="cardServicesTitle">Духовые шкафы</h3>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<section class="testimonials">
