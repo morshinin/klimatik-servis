@@ -161,7 +161,7 @@
 	</header>
 	<section class="hero">
 		<div class="heroInner">
-			<form name="Formverh" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="<?php echo basename(__FILE__); ?>" id="Form1" onsubmit="return ValidateFormverh(this)" class="form form-main text-center p-s shadow-m">
+			<form name="Formverh" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="sendmail.php" id="Form1" onsubmit="return ValidateFormverh(this)" class="form form-main text-center p-s shadow-m">
 				<input type="hidden" name="formid" value="form1">
 				<h4 class="formTitle font-boblic white-text font-s uppercase">
 					Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
