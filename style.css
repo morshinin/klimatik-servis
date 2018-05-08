@@ -39,6 +39,7 @@
 /* Testimonials */
 /* Card Testimonials */
 /* Сta3 */
+/* Page specific styles */
 
 
 /* =General styles */
@@ -769,4 +770,24 @@ h2,
 	.cta3Inner {
 		flex-direction: row;
 	}
+}
+/* Page specific styles */
+.page-spasibo {
+	min-height: 70vh;
+}
+.page-spasiboMain {
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+.page-spasiboTitle {
+	color:#FF6347;
+	text-transform: uppercase;
+	font-size: 64px;
+}
+.page-spasiboLink {
+	font-size: 35px;
 }

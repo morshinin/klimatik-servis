@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 	<title>Ремонт | Установка кондиционеров в Москве по доступным ценам - Спасибо</title>
 </head>
-<body>
-	<h1>
-		<?php echo "Спасибо! Ваше сообщение отправлено."; ?>
-	</h1>
-	<a href="/">Вернуться на главную страницу</a>
+<body class="page-spasibo">
+	<main class="page-spasiboMain">
+		<h1 class="page-spasiboTitle">
+			<?php echo "Спасибо! Ваше сообщение отправлено."; ?>
+		</h1>
+		<a class="page-spasiboLink" href="/">Вернуться на главную страницу</a>
+	</main>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
 	    (function (d, w, c) {
