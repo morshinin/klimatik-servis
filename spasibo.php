@@ -8,6 +8,7 @@
 	<h1>
 		<?php echo "Спасибо! Ваше сообщение отправлено."; ?>
 	</h1>
+	<a href="/">Вернуться на главную страницу</a>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
 	    (function (d, w, c) {
