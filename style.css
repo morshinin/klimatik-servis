@@ -228,6 +228,9 @@ h2,
 	bottom: 0;
 	left: -50px;
 }
+.modal .form-main:after {
+	display: none;
+}
 .form-vintage {
 	padding: 1em 50px;
 	background: #fff;
