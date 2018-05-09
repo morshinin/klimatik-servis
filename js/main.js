@@ -1,3 +1,19 @@
+const cta1Btn = document.getElementById('cta1Btn'),
+      modal1 = document.getElementById('modal1')
+
+const checkClicks = function(e) {
+   switch (e.target.id) {
+      case 'cta1Btn':
+         e.preventDefault()
+         modal1.classList.toggle('display-none')
+         break
+      default:
+         break
+   }
+}
+
+window.addEventListener('click', checkClicks)
+
 function ValidateFormverh(theForm)
 {
    var regexp;

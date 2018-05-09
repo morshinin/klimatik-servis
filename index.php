@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
 	<title>Ремонт | Установка кондиционеров в Москве по доступным ценам</title>
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<header class="pageHeader">
@@ -90,7 +96,7 @@
 			<div class="cta1Col1">
 				<img class="cta1Image img-responsive" src="img/conditioner.jpg" alt="Фото кондиционера" class="img-responsive">
 				<p class="text-center">
-					<a href="#0" class="btn btn-accent">Заказать ремонт</a>
+					<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn-accent">Заказать ремонт</a>
 				</p>
 			</div>
 			<div class="cta1ListWrapper">
@@ -459,8 +465,26 @@
 			Наши услуги по ремоту доступны всем
 		</h2>
 	</footer>
-	<!-- <script type="text/javascript" src="jquery-1.11.1.min.js"></script> -->
-	<script src="js/main.js"></script>
+	<div class="modal display-none" id="modal1">
+		<form name="Formmodal" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="sendmail.php" id="Formmodal" onsubmit="return ValidateFormverh(this)" class="form form-main text-center p-s shadow-m">
+			<input type="hidden" name="formid" value="form1">
+			<h4 class="formTitle font-boblic white-text font-s uppercase">
+				Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
+			</h4>
+			<div class="form-group">
+				<input type="text" class="form-control" id="Editbox1" name="Name:" value="" placeholder="Ваше Имя?">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="Editbox2" name="Telephone:" value="" placeholder="Ваш Телефон?">
+			</div>
+			<button type="submit" id="Button1" name="Knopka" class="btn btn-form">Оставить заявку</button>
+			<p class="px-s mt-2">
+				<small class="white-text uppercase font-xxs font-boblic">
+					Ваши данные не будут переданы третим лицам
+				</small>
+			</p>
+		</form>
+	</div>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
 	    (function (d, w, c) {
