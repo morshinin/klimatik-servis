@@ -28,8 +28,8 @@
 				<p class="red-text font-m bold m-0">
 					Звоните нам!
 				</p>
-				<p class="blue-text font-m bold m-0">
-					+7-495-128-08-98<br>+7-925-567-53-77
+				<p class="m-0">
+					<a class="blue-text font-m bold no-underline" href="tel:74951280898">+7-495-128-08-98</a><br><a class="blue-text font-m bold no-underline" href="tel:79255675377">+7-925-567-53-77</a>
 				</p>
 			</div>
 		</div>

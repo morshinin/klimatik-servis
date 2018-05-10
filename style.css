@@ -114,6 +114,9 @@ h2,
 .uppercase {
 	text-transform: uppercase;
 }
+.no-underline {
+	text-decoration: none;
+}
 .bold {
 	font-weight: bold;
 }
