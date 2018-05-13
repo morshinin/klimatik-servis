@@ -5,13 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ремонт | Установка кондиционеров в Москве по доступным ценам</title>
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
+	<link rel="stylesheet" href="css/yved.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="js/main.js"></script>
 </head>
 <body>
 	<header class="pageHeader">
@@ -485,6 +483,53 @@
 			</p>
 		</form>
 	</div>
+	<!-- Pop ups -->
+	<div class="yvedw">
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Кирилл Лавин, г.Москва, сделал заказ на сумму 1790р, число 1 шт</div></div>
+		</div>
+		<div class="yved yvedf2">
+			<img src="img/yico2.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Андрей Бажутин, г.Астрахань, оставила заявку на обратный звонок</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Мирон Мартеев, г.Липецк, сделал заказ на сумму 1790р, число 1 шт</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Стас Артёмов, г.Екатеринбург, сделал заказ на сумму 1790р, число 1 шт</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Эмиль Измайлов, г.Климовск, сделал заказ на сумму 2760р, число 2 шт</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Ефрем Беляков, г.Салехард, сделал заказ на сумму 1790р, число 1 шт</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Люция Горбунова, г.Уссурийск, сделал заказ на сумму 2760р, число 2 шт</div></div>
+		</div>
+		<div class="yved yvedf2">
+			<img src="img/yico2.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Дмитрий Маслов, г.Киров, оставил заявку на обратный звонок</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Алексей Комаров, г.Москва, сделал заказ на сумму 1790р, число 1 шт</div></div>
+		</div>
+		<div class="yved yvedf1">
+			<img src="img/yico.png" alt="" class="yvedi">
+			<div class="yvedvt"><div class="yvedt">Виктор Бодро́в, г.Санкт-Петербург, сделал заказ на сумму 2760р, число 2 шт</div></div>
+		</div>
+	</div><!-- end of .yvedw -->
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	<script src="js/yved.js"></script>
+	<script src="js/main.js"></script>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
 	    (function (d, w, c) {
