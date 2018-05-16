@@ -19,7 +19,7 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": "*.php, style.css",
+    "files": "*/*.php, *.php, style.css",
     "watchOptions": {},
     "server": false,
     "proxy": "http://localhost/klimatik-servis",

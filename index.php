@@ -1,10 +1,14 @@
-
+<?php $text = "кондиционера";
+if (isset($_GET['utm_term'])) {
+	$utm_term = $_GET['utm_term'];
+}
+?>
 <?php include('header.php'); ?>
 	<header class="pageHeader">
 		<div class="pageHeaderInner">
 			<div class="pageHeaderUTP">
 				<p class="pageHeaderUTPCopy pageHeaderUTPCopy-text-red">
-					Ремонт обслуживание кондиционера в москве
+					Ремонт обслуживание <?php echo $text; ?> в москве
 				</p>
 				<p class="pageHeaderUTPCopy pageHeaderUTPCopy-bg-blue inline-block">
 					Любой сложности | абсолютно всех брендов
@@ -21,28 +25,18 @@
 		</div>
 		<!-- end pageHeaderInner -->
 	</header>
-	<section class="hero">
-		<div class="heroInner">
-			<form name="Formverh" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="sendmail.php" id="Form1" onsubmit="return ValidateFormverh(this)" class="form form-main text-center p-s shadow-m">
-				<input type="hidden" name="formid" value="form1">
-				<h4 class="formTitle font-boblic white-text font-s uppercase">
-					Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
-				</h4>
-				<div class="form-group">
-					<input type="text" class="form-control" id="Editbox1" name="Name:" value="" placeholder="Ваше Имя?">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="Editbox2" name="Telephone:" value="" placeholder="Ваш Телефон?">
-				</div>
-				<button type="submit" id="Button1" name="Knopka" class="btn btn-form">Оставить заявку</button>
-				<p class="px-s mt-2">
-					<small class="white-text uppercase font-xxs font-boblic">
-						Ваши данные не будут переданы третим лицам
-					</small>
-				</p>
-			</form>
-		</div>
-	</section>
+	<?php if (!empty($utm_term)) {
+					if ($utm_term == 'holod') {
+						include 'inc/hero2.php';
+					} elseif ($utm_term == 'vkluchaet') {
+						include 'inc/hero1.php';
+					}
+					
+				} else {
+					include 'inc/hero1.php';
+					
+				}
+	 ?>
 	<section class="benefits">
 		<div class="benefitsInner">
 			<div class="cardBenefits">
@@ -82,7 +76,7 @@
 			<div class="cta1Col1">
 				<img class="cta1Image img-responsive" src="img/conditioner.jpg" alt="Фото кондиционера" class="img-responsive">
 				<p class="text-center">
-					<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn-accent">Заказать ремонт</a>
+					<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn-legacy btn-accent">Заказать ремонт</a>
 				</p>
 			</div>
 			<div class="cta1ListWrapper">
@@ -259,7 +253,16 @@
 				</div>
 			</div>
 			<div class="cta2FormWrapper">
-				<form name="Formseredina" method="post" enctype="multipart/form-data" accept-charset="UTF-8" action="<?php echo basename(__FILE__); ?>" id="Form2" onsubmit="return ValidateFormseredina(this)" class="form form-main text-center p-s shadow-m mb-5">
+				<form 
+					name="Formseredina" 
+					method="post" 
+					enctype="multipart/form-data" 
+					accept-charset="UTF-8" 
+					action="<?php echo basename(__FILE__); ?>" 
+					id="Form2" 
+					onsubmit="return ValidateFormseredina(this)" 
+					class="form form-main"
+				>
 					<input type="hidden" name="formid" value="form2">
 					<h4 class="formTitle font-boblic white-text font-s uppercase">
 						Оставьте заявку на бесплатный выезд мастера и получите скидку по акции!
@@ -270,7 +273,7 @@
 					<div class="form-group">
 						<input type="text" class="form-control" id="Editbox4" name="Telephone:" value="" placeholder="Ваш Телефон?">
 					</div>
-					<button type="submit" id="Button2" name="Knopka" class="btn btn-form">Оставить заявку</button>
+					<button type="submit" id="Button2" name="Knopka" class="btn btn-legacy btn-form">Оставить заявку</button>
 					<p class="px-s mt-2">
 						<small class="white-text uppercase font-xxs font-boblic">
 							Ваши данные не будут переданы третим лицам
@@ -436,7 +439,7 @@
 					<div class="form-group">
 						<input type="text" class="form-control" id="Editbox6" name="Telephone:" value="" placeholder="Ваш Телефон?">
 					</div>
-					<button type="submit" id="Button3" name="Knopka" class="btn btn-form">Оставить заявку</button>
+					<button type="submit" id="Button3" name="Knopka" class="btn btn-legacy btn-form">Оставить заявку</button>
 					<p class="px-s mt-2">
 						<small class="red-text uppercase font-xxs font-boblic">
 							Ваши данные не будут переданы третим лицам

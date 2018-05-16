@@ -15,7 +15,7 @@
 			<div class="form-group">
 				<input type="text" class="form-control" id="Editbox2" name="Telephone:" value="" placeholder="Ваш Телефон?">
 			</div>
-			<button type="submit" id="Button1" name="Knopka" class="btn btn-form">Оставить заявку</button>
+			<button type="submit" id="Button1" name="Knopka" class="btn btn-legacy btn-form">Оставить заявку</button>
 			<p class="px-s mt-2">
 				<small class="white-text uppercase font-xxs font-boblic">
 					Ваши данные не будут переданы третим лицам
@@ -68,7 +68,7 @@
 	</div><!-- end of .yvedw -->
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-	<script src="js/yved.js"></script>
+	<!-- <script src="js/yved.js"></script> -->
 	<script src="js/main.js"></script>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
