@@ -4,35 +4,17 @@ if (isset($_GET['utm_term'])) {
 }
 ?>
 <?php include('header.php'); ?>
-	<header class="pageHeader">
-		<div class="pageHeaderInner">
-			<div class="pageHeaderUTP">
-				<p class="pageHeaderUTPCopy pageHeaderUTPCopy-text-red">
-					Ремонт обслуживание <?php echo $text; ?> в москве
-				</p>
-				<p class="pageHeaderUTPCopy pageHeaderUTPCopy-bg-blue inline-block">
-					Любой сложности | абсолютно всех брендов
-				</p>
-			</div>
-			<div class="pageHeaderContact">
-				<p class="red-text font-m bold m-0">
-					Звоните нам!
-				</p>
-				<p class="m-0">
-					<a class="blue-text font-m bold no-underline" href="tel:74951280898">+7-495-128-08-98</a><br><a class="blue-text font-m bold no-underline" href="tel:79255675377">+7-925-567-53-77</a>
-				</p>
-			</div>
-		</div>
-		<!-- end pageHeaderInner -->
-	</header>
 	<?php if (!empty($utm_term)) {
 					if ($utm_term == 'holod') {
+						include 'inc/pageHeader/pageHeader2.php';
 						include 'inc/hero2.php';
 					} elseif ($utm_term == 'vkluchaet') {
+						include 'inc/pageHeader/pageHeader1.php';
 						include 'inc/hero1.php';
 					}
 					
 				} else {
+					include 'inc/pageHeader/pageHeader1.php';
 					include 'inc/hero1.php';
 					
 				}

@@ -299,14 +299,22 @@ h2,
 	padding: 20px 10px;
 	box-sizing: border-box;
 }
+.pageHeader-header2 {
+	padding: 10px;
+}
 .pageHeaderUTP {
 	margin-bottom: 10px;
 }
 .pageHeaderUTPCopy {
 	text-transform: uppercase;
-	font-size:35px;
 	font-weight: bold;
 	margin: 0;
+}
+.pageHeaderUTPCopy-header1 {
+	font-size: 35px;
+}
+.pageHeaderUTPCopy-header2 {
+	font-size: 24px;
 }
 .pageHeaderUTPCopy-text-red {
 	color:#FF0000;
@@ -317,6 +325,28 @@ h2,
 }
 .pageHeaderContact {
 	font-family: Arial, sans-serif;
+}
+.pageHeaderContactCopy {
+	color: #FF0000;
+	font-weight: bold;
+	margin: 0;
+}
+.pageHeaderContactCopy-header1 {
+	font-size: 29px;
+}
+.pageHeaderContactCopy-header2 {
+	font-size: 22px;
+}
+.pageHeaderContactLink {
+	color: #1E90FF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.pageHeaderContactLink-header1 {
+	font-size: 29px;
+}
+.pageHeaderContactLink-header2 {
+	font-size: 22px;
 }
 @media (min-width: 1000px) {
 	.pageHeader {
@@ -339,6 +369,9 @@ h2,
 		flex: 1;
 		text-align: right;
 	}
+	.pageHeaderContact-header2 {
+		flex: initial;
+	}
 }
 /* Hero */
 .hero {
@@ -354,7 +387,7 @@ h2,
 .hero2 {
 	background-image: url('img/heroImg5.jpg');
 	background-repeat: no-repeat;
-	background-position: 0 -100px;
+	background-position: 0 0;
 	background-size: cover;
 }
 .heroInner {
