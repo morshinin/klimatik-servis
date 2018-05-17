@@ -68,7 +68,7 @@
 	</div><!-- end of .yvedw -->
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-	<!-- <script src="js/yved.js"></script> -->
+	<script src="js/yved.js"></script>
 	<script src="js/main.js"></script>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
